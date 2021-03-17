@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 const WrapperNew = styled.section`
   padding: 3em;
-  background: ${props => props.primary ? "palevioletred" : "red"};;
-  font-size: 16px;
+  background: ${props => props.primary ? "palevioletred" : "red"};
+  font-size: ${props => props.big ? "18px" : "16px"};
 `;
 
 function App() {
@@ -16,10 +16,10 @@ function App() {
             <WrapperNew primary>
                first wrapper first
             </WrapperNew>
-            <WrapperNew primary>
+            <WrapperNew big>
                 First wrapper
             </WrapperNew>
-            <WrapperNew>
+            <WrapperNew primary big>
                 Second Wrapper
             </WrapperNew>
         </div>
