@@ -16,7 +16,7 @@ function App() {
     <Wrapper>
         <div className="App">
             <header className="App-header">
-                Learn kjbfhjbjhbdjhbhjk
+                Learn react newly updated
             </header>
             <NewWrapper>
                 Hello
