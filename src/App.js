@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Wrapper = styled.section`
   padding: 3em;
   background: papayawhip;
+  font-size: 10px;
 `;
 
 const NewWrapper = styled.section`
