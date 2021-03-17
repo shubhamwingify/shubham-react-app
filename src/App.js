@@ -1,30 +1,26 @@
 import './App.css';
 import styled from 'styled-components'
 
-const Wrapper = styled.section`
+const WrapperNew = styled.section`
   padding: 3em;
-  background: papayawhip;
-  font-size: 10px;
-`;
-
-const NewWrapper = styled.section`
-  padding: 9em;
-  background: red;
+  background: ${props => props.primary ? "palevioletred" : "white"};;
+  font-size: 16px;
 `;
 
 function App() {
-  return (
-    <Wrapper>
+    return (
         <div className="App">
             <header className="App-header">
                 Learn react newly updated
             </header>
-            <NewWrapper>
-                Hello
-            </NewWrapper>
+            <WrapperNew primary>
+                First wrapper
+            </WrapperNew>
+            <WrapperNew>
+                Second Wrapper
+            </WrapperNew>
         </div>
-    </Wrapper>
-  );
+    );
 }
 
 export default App;
