@@ -18,17 +18,26 @@ const WrapperNew = styled.section`
 function App() {
     return (
         <div className="App">
+            <div>
+                Home
+            </div>
             <header className="App-header">
                 Learn react newly updated
             </header>
             <WrapperNew primary big>
-                first wrapper first
+                <p>
+                    first wrapper first
+                </p>
             </WrapperNew>
             <WrapperNew big className={"blue my-custom-shubham-class"}>
-                First wrapper with class
+                <div>
+                    First wrapper with class
+                </div>
             </WrapperNew>
             <WrapperNew primary big>
-                Second Wrapper
+               <p>
+                   Second Wrapper
+               </p>
             </WrapperNew>
         </div>
     );
