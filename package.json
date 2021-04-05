@@ -11,6 +11,7 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.1",
+    "express": "^4.17.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -19,7 +20,8 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "devStart": "react-scripts start",
+    "start": "node app",
     "build": "PUBLIC_URL=https://shubham-react-app.herokuapp.com react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
