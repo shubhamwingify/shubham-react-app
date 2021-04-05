@@ -1,5 +1,14 @@
 import './App.css';
 import styled from 'styled-components'
+import {Link} from "react-router-dom";
+
+const NavBar = styled.div`
+  background-color: lightblue;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+`;
 
 const WrapperNew = styled.section`
   & .blue {
@@ -18,9 +27,10 @@ const WrapperNew = styled.section`
 function App() {
     return (
         <div className="App">
-            <div>
-                Home
-            </div>
+            <NavBar>
+                <Link to="/">Home</Link>
+                <Link to="/contact">Contact us </Link>
+            </NavBar>
             <header className="App-header">
                 Learn react newly updated
             </header>
