@@ -1,5 +1,4 @@
 import './App.css';
-import styled from 'styled-components'
 import {Link} from "react-router-dom";
 import {WrapperNew, NavBar} from "./styles";
 
