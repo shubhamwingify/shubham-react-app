@@ -5,11 +5,11 @@ const app = express()
 const port = process.env.PORT || 3000 // Heroku will need the PORT environment variable
 
 app.use((req, res, next) => {
-    res.append('Access-Control-Allow-Origin', ['*']);
-    res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.append('Access-Control-Allow-Headers', 'Content-Type');
-    res.append('X-Frame-Options', 'DENY');
-    res.append('Access-Control-Expose-Headers', '*');
+    res.set('Access-Control-Allow-Origin', ['*']);
+    res.set('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.set('Access-Control-Allow-Headers', 'Content-Type');
+    res.set('X-Frame-Options', 'DENY');
+    res.set('Access-Control-Expose-Headers', '*');
     next();
 });
 
