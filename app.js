@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, 'build'), {
         console.log('Settings headers');
         res.set('X-Frame-Options', 'DENY');
         res.set('Access-Control-Expose-Headers', '*');
-        console.log('Settings headers', res.headers);
+        console.log('Settings headers');
     }
 }));
 
