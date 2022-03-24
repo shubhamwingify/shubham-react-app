@@ -7,8 +7,8 @@ const port = process.env.PORT || 3000 // Heroku will need the PORT environment v
 app.use(express.static(path.join(__dirname, 'build'), {
     setHeaders: function(res, path) {
         console.log('Settings headers');
-        res.set('X-Frame-Options', 'DENY');
-        res.set('Access-Control-Expose-Headers', '*');
+        res.setHeader('X-Frame-Options', 'DENY');
+        res.setHeader('Access-Control-Expose-Headers', '*');
         console.log('Settings headers');
     }
 }));
