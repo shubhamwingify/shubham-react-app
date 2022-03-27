@@ -22,7 +22,7 @@
   "scripts": {
     "devStart": "react-scripts start",
     "start": "node app",
-    "build": "PUBLIC_URL=https://shubham-react-app.herokuapp.com react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
