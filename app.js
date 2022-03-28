@@ -10,6 +10,7 @@ const headers = function (res, path) {
     res.set('Access-Control-Allow-Headers', 'Content-Type');
     res.set('Access-Control-Expose-Headers', '*');
     res.set('Content-Security-Policy', "frame-ancestors 'none';");
+    res.set('X-Frame-Options', 'DENY');
 };
 
 app.use(express.static(path.join(__dirname, 'build'), {
