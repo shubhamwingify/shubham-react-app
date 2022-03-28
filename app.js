@@ -8,8 +8,8 @@ const headers = function (res, path) {
     res.set('Access-Control-Allow-Origin', ['*']);
     res.set('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
     res.set('Access-Control-Allow-Headers', 'Content-Type');
-    res.set('X-Frame-Options', 'DENY');
     res.set('Access-Control-Expose-Headers', '*');
+    res.set('Content-Security-Policy', 'frame-ancestors "none"');
 };
 
 app.use(express.static(path.join(__dirname, 'build'), {
